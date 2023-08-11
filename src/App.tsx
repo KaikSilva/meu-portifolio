@@ -6,10 +6,10 @@ import Header from "./components/header"
 
 
 function App() {
-  const divRef = useRef<null>(null);
+  const divRef = useRef<HTMLDivElement>(null);
 
   const scrollToDiv = () => {
-    divRef?.current.scrollIntoView({ behavior: 'smooth' });
+    divRef?.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (

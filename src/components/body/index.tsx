@@ -1,11 +1,9 @@
-import abstract12 from './webp/abstract12.webp';
-import person103 from './webp/person103.webp';
 import { motion } from 'framer-motion';
 import { InView  } from 'react-intersection-observer';
 import {FaHeart} from "react-icons/fa";
 
 interface Props {
-    divRef: React.MutableRefObject<null>;
+    divRef?: React.MutableRefObject<HTMLDivElement> | React.MutableRefObject<null>; 
 }
 
 function Body({divRef}:Props) {
@@ -476,7 +474,7 @@ function Body({divRef}:Props) {
     {/** Fade */}
     <div className="container-fluid px-vw-5 pt-0 position-relative aos-init aos-animate" style={{background:"linear-gradient(24deg,#1717e5,transparent 21%),linear-gradient(198deg,rgba(255,193,7,.2) 11%,transparent 0),linear-gradient(50deg,#6610f2 5%,#6f42c1 32%,#d63384 35%,#dc3545 65%,#fd7e14 83%,#ffc107 91%)"}} data-aos="fade">
       <div className="position-absolute w-100 h-50 bg-black top-0 start-0"></div>
-      <div className="position-relative py-vh-5 pt-0  bg-cover bg-center rounded-5" style={{backgroundImage: abstract12}}>
+      <div className="position-relative py-vh-5 pt-0  bg-cover bg-center rounded-5" >
         <div className="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
           <div className="row d-flex align-items-center">
 
@@ -494,7 +492,7 @@ function Body({divRef}:Props) {
                 transition={{ duration: 0.5 }}
               >
                 <div className="col-12">
-                  <img src={person103} width="684" height="457" alt="our CEO with some nice numbers" className="img-fluid rounded-5 mt-5" loading="lazy" />
+
                 </div>
                 <div className="col-12 col-lg-10 col-xl-8 text-center my-5">
                   <p className="lead border-bottom pb-4 border-secondary">"Lorem ipsum dolor sit amet, consetetur sadipscing
