@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaik Silva - Portifolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="bower_components/aos/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      let scrollpos = window.scrollY;
+      const header = document.querySelector(".navbar");
+      const header_height = header.offsetHeight;
+  
+      const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm");
+      const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm");
+  
+      window.addEventListener('scroll', function () {
+        scrollpos = window.scrollY;
+  
+        if (scrollpos >= header_height) { add_class_on_scroll(); }
+        else { remove_class_on_scroll(); }
+  
+        console.log(scrollpos);
+      })
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
