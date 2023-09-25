@@ -21,3 +21,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+id_rsa.pub

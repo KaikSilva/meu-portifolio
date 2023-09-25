@@ -468,11 +468,11 @@ function Body({divRef}:Props) {
       </div>
     </div>
 
-    
+
 
 
     {/** Fade */}
-    <div className="container-fluid px-vw-5 pt-0 position-relative aos-init aos-animate" style={{background:"linear-gradient(24deg,#1717e5,transparent 21%),linear-gradient(198deg,rgba(255,193,7,.2) 11%,transparent 0),linear-gradient(50deg,#6610f2 5%,#6f42c1 32%,#d63384 35%,#dc3545 65%,#fd7e14 83%,#ffc107 91%)"}} data-aos="fade">
+    <div className="container-fluid px-vw-5 pt-0 position-relative aos-init aos-animate" style={{background:"linear-gradient(45deg, rgba(36,0,35,1) 0%, rgba(190,32,212,1) 42%, rgba(177,0,255,1) 90%)"}} data-aos="fade">
       <div className="position-absolute w-100 h-50 bg-black top-0 start-0"></div>
       <div className="position-relative py-vh-5 pt-0  bg-cover bg-center rounded-5" >
         <div className="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
@@ -481,32 +481,31 @@ function Body({divRef}:Props) {
             <div className="col-6 d-flex align-items-center  shadow rounded-5 p-0 aos-init aos-animate" data-aos="zoom-in-up">
               <div className="row d-flex justify-content-center">
               <InView>
-            {({ inView, ref }) => (
-              <motion.div
-                ref={ref}
-                className="row d-flex justify-content-center aos-init aos-animate"
-                data-aos="zoom-in-up"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5 }}
-              >
-                <div className="col-12">
-
-                </div>
-                <div className="col-12 col-lg-10 col-xl-8 text-center my-5">
-                  <p className="lead border-bottom pb-4 border-secondary">"Lorem ipsum dolor sit amet, consetetur sadipscing
-                    elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                    takimata sanctus est Lorem ipsum dolor sit amet."</p>
-                  <p className="text-secondary text-center">Jane Doe, CEO</p>
-                </div>
-              </motion.div>
-            )}
+              {({ inView, ref }) => (
+                <motion.div
+                  ref={ref}
+                  className="row d-flex justify-content-center aos-init aos-animate"
+                  data-aos="zoom-in-up"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <div className="col-12">
+                  </div>
+                  <div className="col-12 col-lg-10 col-xl-8 text-center my-5">
+                    <p className="lead border-bottom pb-4 border-secondary">"Lorem ipsum dolor sit amet, consetetur sadipscing
+                      elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                      takimata sanctus est Lorem ipsum dolor sit amet."</p>
+                    <p className="text-secondary text-center">Jane Doe, CEO</p>
+                  </div>
+                </motion.div>
+              )}
           </InView>
               </div>
             </div>
-        
+                
             <div className="col-5 offset-1">
             <span className="h5 text-secondary fw-lighter">The numbers</span>
                 <InView>
